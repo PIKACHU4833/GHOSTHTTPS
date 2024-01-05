@@ -54,7 +54,7 @@ FLINGALL.BackgroundColor3 = Color3.fromRGB(226, 155, 64)
 FLINGALL.BorderColor3 = Color3.fromRGB(0, 0, 0)
 FLINGALL.BorderSizePixel = 3
 FLINGALL.Rotation = 25
-FLINGALL.Position = UDim2.new(1.07, 0, 0, 0)
+FLINGALL.Position = UDim2.new(1.05, 0, 0.15, 0)
 FLINGALL.Size = UDim2.new(0, 100, 0, 25)
 FLINGALL.Font = Enum.Font.SourceSans
 FLINGALL.Text = "FLING ALL"
@@ -70,7 +70,7 @@ SpamCHAT.BackgroundColor3 = Color3.fromRGB(226, 155, 64)
 SpamCHAT.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SpamCHAT.BorderSizePixel = 3
 SpamCHAT.Rotation = 25
-SpamCHAT.Position = UDim2.new(1.07, 0, 0.2, 0)
+SpamCHAT.Position = UDim2.new(1.05, 0, 0.35, 0)
 SpamCHAT.Size = UDim2.new(0, 100, 0, 25)
 SpamCHAT.Font = Enum.Font.SourceSans
 SpamCHAT.Text = "SPAM CHAT"
@@ -80,6 +80,16 @@ SpamCHAT.TextSize = 14.000
 SpamCHAT.TextWrapped = true
 SpamCHAT.MouseButton1Down:connect(function()
 local MESSAGE = "😡TEAM JKLO JOINED TO DAY HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA!1?!1??"
+local E = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(MESSAGE, E)
+wait(0)
+local MESSAGE = "😡TEAM JKLO ON TOP TO DAY HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA!1?!1??"
+local E = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(MESSAGE, E)
+wait(0)
+local MESSAGE = "😡TEAM JKLO GOAT TO DAY HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA!1?!1??"
 local E = "All"
 local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
 Event:FireServer(MESSAGE, E)
