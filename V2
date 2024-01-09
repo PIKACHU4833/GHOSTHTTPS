@@ -14,6 +14,7 @@ local IY = Instance.new("TextButton")
 local OH = Instance.new("TextButton")
 local FLYING = Instance.new("TextButton")
 local STICKLE = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
 
 --Properties:
  
@@ -169,6 +170,19 @@ STICKLE.TextWrapped = true
 STICKLE.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://pastebin.com/raw/AZVi2tuK"))()
 end)
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.fromRGB(226, 155, 64)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 3
+TextBox.Position = UDim2.new(0, 0, 0.47, 0)
+TextBox.Size = UDim2.new(0, 282, 0, 25)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = "TEXT HERE"
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
 -- Scripts:
 
 local function QFCS_fake_script() -- Frame.Dragify 
