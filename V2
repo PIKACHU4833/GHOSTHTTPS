@@ -110,10 +110,10 @@ SpamTEXT.TextScaled = true
 SpamTEXT.TextSize = 14.000
 SpamTEXT.TextWrapped = true
 SpamCHAT.MouseButton1Down:connect(function()
+local MESSAGE = "" ..TextBox.Text
 local E = "All"
 local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
-Event:FireServer(TextBox.Text, E)
-end
+Event:FireServer(MESSAGE, E)
 end)
 ENERGIZE.Parent = Frame
 ENERGIZE.BackgroundColor3 = Color3.fromRGB(226, 155, 64)
