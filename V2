@@ -104,14 +104,16 @@ SpamTEXT.Rotation = -25
 SpamTEXT.Position = UDim2.new(-0.40, 0, 0.15, 0)
 SpamTEXT.Size = UDim2.new(0, 100, 0, 25)
 SpamTEXT.Font = Enum.Font.SourceSans
-SpamTEXT.Text = "CHAT TEXT"
+SpamTEXT.Text = "SpamTEXT"
 SpamTEXT.TextColor3 = Color3.fromRGB(0, 0, 0)
 SpamTEXT.TextScaled = true
 SpamTEXT.TextSize = 14.000
 SpamTEXT.TextWrapped = true
 SpamCHAT.MouseButton1Down:connect(function()
+local E = "All"
 local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
-Event:FireServer(TextBox.Text, All)
+Event:FireServer(TextBox.Text, E)
+end
 end)
 ENERGIZE.Parent = Frame
 ENERGIZE.BackgroundColor3 = Color3.fromRGB(226, 155, 64)
