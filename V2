@@ -10,6 +10,7 @@ local TextLabel = Instance.new("TextLabel")
 local FLINGALL = Instance.new("TextButton")
 local SpamCHAT = Instance.new("TextButton")
 local SpamTEXT = Instance.new("TextButton")
+local CREDIT = Instance.new("TextButton")
 local ENERGIZE = Instance.new("TextButton")
 local IY = Instance.new("TextButton")
 local OH = Instance.new("TextButton")
@@ -130,6 +131,28 @@ local E = "All"
 local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
 Event:FireServer(MESSAGE, E)
 end)
+CREDIT.Parent = Frame
+CREDIT.BackgroundColor3 = Color3.fromRGB(226, 155, 64)
+CREDIT.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CREDIT.BorderSizePixel = 3
+CREDIT.Rotation = -25
+CREDIT.Position = UDim2.new(1.05, 0, 0.65, 0)
+CREDIT.Size = UDim2.new(0, 100, 0, 25)
+CREDIT.Font = Enum.Font.SourceSans
+CREDIT.Text = "CREDIT"
+CREDIT.TextColor3 = Color3.fromRGB(0, 0, 0)
+CREDIT.TextScaled = true
+CREDIT.TextSize = 14.000
+CREDIT.TextWrapped = true
+CREDIT.MouseButton1Down:connect(function()
+TextBox.Text = "B"
+wait(0.8)
+TextBox.Text = "By"
+wait(0.8)
+TextBox.Text = "By T"
+wait(0.8)
+TextBox.Text = "By TJ"
+end)
 ENERGIZE.Parent = Frame
 ENERGIZE.BackgroundColor3 = Color3.fromRGB(226, 155, 64)
 ENERGIZE.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -212,7 +235,7 @@ TextBox.BorderSizePixel = 3
 TextBox.Position = UDim2.new(0, 0, 0.47, 0)
 TextBox.Size = UDim2.new(0, 282, 0, 25)
 TextBox.Font = Enum.Font.SourceSans
-TextBox.Text = "TEXT HERE"
+TextBox.Text = ""
 TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextBox.TextScaled = true
 TextBox.TextSize = 14.000
@@ -357,6 +380,37 @@ end
 coroutine.wrap(PKIPWI_fake_script)()
 local function PKIPWI_fake_script() -- SpamTEXT.LocalScript 
 	local script = Instance.new('LocalScript', SpamTEXT)
+
+	while wait() do
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,i,0) -- change backgroundcolor3 to textcolor3 to make text color rainbow
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,255,0)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,i)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,i,255)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,0,255)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,i)
+			wait(0.01)
+		end
+	end
+end
+coroutine.wrap(PKIPWI_fake_script)()
+local function PKIPWI_fake_script() -- CREDIT.LocalScript 
+	local script = Instance.new('LocalScript', CREDIT)
 
 	while wait() do
 		for i = 0,255,5 do
