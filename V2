@@ -19,6 +19,7 @@ local FLYING = Instance.new("TextButton")
 local STICKLE = Instance.new("TextButton")
 local TextBox = Instance.new("TextBox")
 local NAMELESS = Instance.new("TextButton")
+local PENDULUM = Instance.new("TextButton")
 
 --Properties:
  
@@ -262,7 +263,7 @@ NAMELESS.Parent = Frame
 NAMELESS.BackgroundColor3 = Color3.fromRGB(226, 155, 64)
 NAMELESS.BorderColor3 = Color3.fromRGB(0, 0, 0)
 NAMELESS.BorderSizePixel = 3
-NAMELESS.Position = UDim2.new(0, 0, 0.55, 0)
+NAMELESS.Position = UDim2.new(0, 0, 0.65, 0)
 NAMELESS.Size = UDim2.new(0, 100, 0, 25)
 NAMELESS.Font = Enum.Font.SourceSans
 NAMELESS.Text = "Nameless ADMIN"
@@ -277,7 +278,7 @@ PENDULUM.Parent = Frame
 PENDULUM.BackgroundColor3 = Color3.fromRGB(226, 155, 64)
 PENDULUM.BorderColor3 = Color3.fromRGB(0, 0, 0)
 PENDULUM.BorderSizePixel = 3
-PENDULUM.Position = UDim2.new(0.5, 0, 0.55, 0)
+PENDULUM.Position = UDim2.new(0.5, 0, 0.65, 0)
 PENDULUM.Size = UDim2.new(0, 120, 0, 25)
 PENDULUM.Font = Enum.Font.SourceSans
 PENDULUM.Text = "Pendulum Hub V5"
