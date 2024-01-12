@@ -49,7 +49,7 @@ TextLabel.BorderSizePixel = 3
 TextLabel.Position = UDim2.new(0, 0, 0.889380515, 0)
 TextLabel.Size = UDim2.new(0, 282, 0, 25)
 TextLabel.Font = Enum.Font.Creepster
-TextLabel.Text = "GH0TSHTTPS GUI V²"
+TextLabel.Text = "GH0TSHTTPS Gui V2 👻"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
@@ -113,6 +113,7 @@ local MESSAGE = "😡TEAM JKLO GOAT TO DAY HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAH
 local E = "All"
 local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
 Event:FireServer(MESSAGE, E)
+end
 end)
 SpamTEXT.Parent = Frame
 SpamTEXT.BackgroundColor3 = Color3.fromRGB(226, 155, 64)
@@ -148,6 +149,7 @@ local MESSAGE = "0 SEC LEFT!?!?"
 local EE = "All"
 local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
 Event:FireServer(MESSAGE, EE)
+end
 end)
 CREDIT.Parent = Frame
 CREDIT.BackgroundColor3 = Color3.fromRGB(226, 155, 64)
