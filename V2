@@ -7,6 +7,7 @@ local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local IMAGE = Instance.new("ImageLabel")
 local TextLabel = Instance.new("TextLabel")
+local TextLabel2 = Instance.new("TextLabel")
 local FLINGALL = Instance.new("TextButton")
 local SpamCHAT = Instance.new("TextButton")
 local SpamTEXT = Instance.new("TextButton")
@@ -17,6 +18,7 @@ local OH = Instance.new("TextButton")
 local FLYING = Instance.new("TextButton")
 local STICKLE = Instance.new("TextButton")
 local TextBox = Instance.new("TextBox")
+local NAMELESS = Instance.new("TextButton")
 
 --Properties:
  
@@ -52,6 +54,19 @@ TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 
+TextLabel2.Parent = Frame
+TextLabel2.BackgroundColor3 = Color3.fromRGB(229, 228, 223)
+TextLabel2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel2.BorderSizePixel = 3
+TextLabel2.Position = UDim2.new(0, 0, 0.779380515, 0)
+TextLabel2.Size = UDim2.new(0, 282, 0, 25)
+TextLabel2.Font = Enum.Font.Creepster
+TextLabel2.Text = "Made By y**nkidd ( Team JKL* )"
+TextLabel2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel2.TextScaled = true
+TextLabel2.TextSize = 14.000
+TextLabel2.TextWrapped = true
+
 FLINGALL.Parent = Frame
 FLINGALL.BackgroundColor3 = Color3.fromRGB(226, 155, 64)
 FLINGALL.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -76,7 +91,7 @@ SpamCHAT.Rotation = 25
 SpamCHAT.Position = UDim2.new(1.05, 0, 0.35, 0)
 SpamCHAT.Size = UDim2.new(0, 100, 0, 25)
 SpamCHAT.Font = Enum.Font.SourceSans
-SpamCHAT.Text = "SPAM CHAT"
+SpamCHAT.Text = "Destroy Chat"
 SpamCHAT.TextColor3 = Color3.fromRGB(0, 0, 0)
 SpamCHAT.TextScaled = true
 SpamCHAT.TextSize = 14.000
@@ -140,7 +155,7 @@ CREDIT.Rotation = -25
 CREDIT.Position = UDim2.new(1.05, 0, 0.65, 0)
 CREDIT.Size = UDim2.new(0, 100, 0, 25)
 CREDIT.Font = Enum.Font.SourceSans
-CREDIT.Text = "CREDIT"
+CREDIT.Text = "Credit"
 CREDIT.TextColor3 = Color3.fromRGB(0, 0, 0)
 CREDIT.TextScaled = true
 CREDIT.TextSize = 14.000
@@ -161,7 +176,7 @@ ENERGIZE.BorderSizePixel = 3
 ENERGIZE.Position = UDim2.new(0, 0, 0.06, 0)
 ENERGIZE.Size = UDim2.new(0, 100, 0, 25)
 ENERGIZE.Font = Enum.Font.SourceSans
-ENERGIZE.Text = "ENERGIZE"
+ENERGIZE.Text = "Energize GUI"
 ENERGIZE.TextColor3 = Color3.fromRGB(0, 0, 0)
 ENERGIZE.TextScaled = true
 ENERGIZE.TextSize = 14.000
@@ -176,7 +191,7 @@ IY.BorderSizePixel = 3
 IY.Position = UDim2.new(0, 0, 0.2, 0)
 IY.Size = UDim2.new(0, 100, 0, 25)
 IY.Font = Enum.Font.SourceSans
-IY.Text = "INFINITE YIELD"
+IY.Text = "Infinite Yield"
 IY.TextColor3 = Color3.fromRGB(0, 0, 0)
 IY.TextScaled = true
 IY.TextSize = 14.000
@@ -221,7 +236,7 @@ STICKLE.BorderSizePixel = 3
 STICKLE.Position = UDim2.new(0, 0, 0.34, 0)
 STICKLE.Size = UDim2.new(0, 100, 0, 25)
 STICKLE.Font = Enum.Font.SourceSans
-STICKLE.Text = "STICKLE"
+STICKLE.Text = "Stickle"
 STICKLE.TextColor3 = Color3.fromRGB(0, 0, 0)
 STICKLE.TextScaled = true
 STICKLE.TextSize = 14.000
@@ -242,6 +257,36 @@ TextBox.TextScaled = true
 TextBox.TextSize = 14.000
 TextBox.TextWrapped = true
 
+NAMELESS.Parent = Frame
+NAMELESS.BackgroundColor3 = Color3.fromRGB(226, 155, 64)
+NAMELESS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NAMELESS.BorderSizePixel = 3
+NAMELESS.Position = UDim2.new(0, 0, 0.55, 0)
+NAMELESS.Size = UDim2.new(0, 100, 0, 25)
+NAMELESS.Font = Enum.Font.SourceSans
+NAMELESS.Text = "Nameless ADMIN"
+NAMELESS.TextColor3 = Color3.fromRGB(0, 0, 0)
+NAMELESS.TextScaled = true
+NAMELESS.TextSize = 14.000
+NAMELESS.TextWrapped = true
+NAMELESS.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))()
+end)
+PENDULUM.Parent = Frame
+PENDULUM.BackgroundColor3 = Color3.fromRGB(226, 155, 64)
+PENDULUM.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PENDULUM.BorderSizePixel = 3
+PENDULUM.Position = UDim2.new(0.5, 0, 0.55, 0)
+PENDULUM.Size = UDim2.new(0, 120, 0, 25)
+PENDULUM.Font = Enum.Font.SourceSans
+PENDULUM.Text = "Pendulum Hub V5"
+PENDULUM.TextColor3 = Color3.fromRGB(0, 0, 0)
+PENDULUM.TextScaled = true
+PENDULUM.TextSize = 14.000
+PENDULUM.TextWrapped = true
+PENDULUM.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
+end)
 -- Scripts:
 
 local function QFCS_fake_script() -- Frame.Dragify 
