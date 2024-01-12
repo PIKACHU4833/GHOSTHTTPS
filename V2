@@ -56,11 +56,12 @@ TextLabel.TextWrapped = true
 
 TextLabel2.Parent = Frame
 TextLabel2.BackgroundColor3 = Color3.fromRGB(229, 228, 223)
+TextLabel2.BackgroundTransparency = 1
 TextLabel2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel2.BorderSizePixel = 3
 TextLabel2.Position = UDim2.new(0, 0, 0.779380515, 0)
 TextLabel2.Size = UDim2.new(0, 282, 0, 25)
-TextLabel2.Font = Enum.Font.Creepster
+TextLabel2.Font = Enum.Font.Bangers
 TextLabel2.Text = "Made By y**nkidd ( Team JKL* )"
 TextLabel2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel2.TextScaled = true
@@ -481,6 +482,37 @@ local function PKIPWI_fake_script() -- CREDIT.LocalScript
 		end
 		for i = 255,0,-5 do
 			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,i)
+			wait(0.01)
+		end
+	end
+end
+coroutine.wrap(PKIPWI_fake_script)()
+local function PKIPWI_fake_script() -- TextLabel2.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel2)
+
+	while wait() do
+		for i = 0,255,5 do
+			script.Parent.TextColor3 = Color3.fromRGB(255,i,0) -- change backgroundcolor3 to textcolor3 to make text color rainbow
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.TextColor3 = Color3.fromRGB(i,255,0)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.TextColor3 = Color3.fromRGB(0,255,i)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.TextColor3 = Color3.fromRGB(0,i,255)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.TextColor3 = Color3.fromRGB(i,0,255)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.TextColor3 = Color3.fromRGB(255,0,i)
 			wait(0.01)
 		end
 	end
