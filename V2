@@ -127,7 +127,7 @@ SpamTEXT.TextColor3 = Color3.fromRGB(0, 0, 0)
 SpamTEXT.TextScaled = true
 SpamTEXT.TextSize = 14.000
 SpamTEXT.TextWrapped = true
-SpamCHAT.MouseButton1Down:connect(function()
+SpamTEXT.MouseButton1Down:connect(function()
 wait(0)
 local MESSAGE = "TEAM JKLO WILL NUKE THIS SERVER IN 3 SEC"
 local EE = "All"
