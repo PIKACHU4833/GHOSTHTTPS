@@ -22,6 +22,10 @@ local STICKLE = Instance.new("TextButton")
 local TextBox = Instance.new("TextBox")
 local NAMELESS = Instance.new("TextButton")
 local PENDULUM = Instance.new("TextButton")
+local GHOST = Instance.new("TextLabel")
+local HTTPS = Instance.new("TextLabel")
+local EMOJI1 = Instance.new("TextLabel")
+local EMOJI2 = Instance.new("TextLabel")
 
 --Properties:
  
@@ -329,6 +333,34 @@ PENDULUM.TextWrapped = true
 PENDULUM.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
 end)
+GHOST.Parent = Frame
+GHOST.BackgroundColor3 = Color3.fromRGB(229, 228, 223)
+GHOST.BackgroundTransparency = 1
+GHOST.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GHOST.BorderSizePixel = 3
+GHOST.Position = UDim2.new(0, 0, 0.889380515, 0)
+GHOST.Size = UDim2.new(0, 300, 0, 30)
+GHOST.Font = Enum.Font.Creepster
+GHOST.Text = "GHOST"
+GHOST.TextColor3 = Color3.fromRGB(0, 0, 0)
+GHOST.TextScaled = true
+GHOST.TextSize = 14.000
+GHOST.TextWrapped = true
+
+HTTPS.Parent = Frame
+HTTPS.BackgroundColor3 = Color3.fromRGB(229, 228, 223)
+HTTPS.BackgroundTransparency = 1
+HTTPS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HTTPS.BorderSizePixel = 3
+HTTPS.Position = UDim2.new(0, 0, 0.779380515, 0)
+HTTPS.Size = UDim2.new(0, 282, 0, 25)
+HTTPS.Font = Enum.Font.Bangers
+HTTPS.Text = "HTTPS"
+HTTPS.TextColor3 = Color3.fromRGB(0, 0, 0)
+HTTPS.TextScaled = true
+HTTPS.TextSize = 14.000
+HTTPS.TextWrapped = true
+
 -- Scripts:
 
 local function QFCS_fake_script() -- Frame.Dragify 
