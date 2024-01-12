@@ -336,9 +336,10 @@ end)
 GHOST.Parent = Frame
 GHOST.BackgroundColor3 = Color3.fromRGB(229, 228, 223)
 GHOST.BackgroundTransparency = 1
+GHOST.Rotation = -25
 GHOST.BorderColor3 = Color3.fromRGB(0, 0, 0)
 GHOST.BorderSizePixel = 3
-GHOST.Position = UDim2.new(0, 0, 0.889380515, 0)
+GHOST.Position = UDim2.new(-0.40, 0, 0.095, 0)
 GHOST.Size = UDim2.new(0, 300, 0, 30)
 GHOST.Font = Enum.Font.Creepster
 GHOST.Text = "GHOST"
@@ -350,11 +351,12 @@ GHOST.TextWrapped = true
 HTTPS.Parent = Frame
 HTTPS.BackgroundColor3 = Color3.fromRGB(229, 228, 223)
 HTTPS.BackgroundTransparency = 1
+HTTPS.Rotation = 25
 HTTPS.BorderColor3 = Color3.fromRGB(0, 0, 0)
 HTTPS.BorderSizePixel = 3
-HTTPS.Position = UDim2.new(0, 0, 0.779380515, 0)
+HTTPS.Position = UDim2.new(1.05, 0, 0.095, 0)
 HTTPS.Size = UDim2.new(0, 282, 0, 25)
-HTTPS.Font = Enum.Font.Bangers
+HTTPS.Font = Enum.Font.Creepster
 HTTPS.Text = "HTTPS"
 HTTPS.TextColor3 = Color3.fromRGB(0, 0, 0)
 HTTPS.TextScaled = true
@@ -649,6 +651,68 @@ local function PKIPWI_fake_script() -- CONSOLEDES.LocalScript
 		for i = 255,0,-5 do
 			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,i)
 			wait(0.01)
+		end
+	end
+end
+coroutine.wrap(PKIPWI_fake_script)()
+local function PKIPWI_fake_script() -- GHOST.LocalScript 
+	local script = Instance.new('LocalScript', GHOST)
+
+	while wait() do
+		for i = 0,255,5 do
+			script.Parent.TextColor3 = Color3.fromRGB(255,i,0) -- change backgroundcolor3 to textcolor3 to make text color rainbow
+			wait(0)
+		end
+		for i = 255,0,-5 do
+			script.Parent.TextColor3 = Color3.fromRGB(i,255,0)
+			wait(0)
+		end
+		for i = 0,255,5 do
+			script.Parent.TextColor3 = Color3.fromRGB(0,255,i)
+			wait(0)
+		end
+		for i = 255,0,-5 do
+			script.Parent.TextColor3 = Color3.fromRGB(0,i,255)
+			wait(0)
+		end
+		for i = 0,255,5 do
+			script.Parent.TextColor3 = Color3.fromRGB(i,0,255)
+			wait(0)
+		end
+		for i = 255,0,-5 do
+			script.Parent.TextColor3 = Color3.fromRGB(255,0,i)
+			wait(0)
+		end
+	end
+end
+coroutine.wrap(PKIPWI_fake_script)()
+local function PKIPWI_fake_script() -- HTTPS.LocalScript 
+	local script = Instance.new('LocalScript', HTTPS)
+
+	while wait() do
+		for i = 0,255,5 do
+			script.Parent.TextColor3 = Color3.fromRGB(255,i,0) -- change backgroundcolor3 to textcolor3 to make text color rainbow
+			wait(0)
+		end
+		for i = 255,0,-5 do
+			script.Parent.TextColor3 = Color3.fromRGB(i,255,0)
+			wait(0)
+		end
+		for i = 0,255,5 do
+			script.Parent.TextColor3 = Color3.fromRGB(0,255,i)
+			wait(0)
+		end
+		for i = 255,0,-5 do
+			script.Parent.TextColor3 = Color3.fromRGB(0,i,255)
+			wait(0)
+		end
+		for i = 0,255,5 do
+			script.Parent.TextColor3 = Color3.fromRGB(i,0,255)
+			wait(0)
+		end
+		for i = 255,0,-5 do
+			script.Parent.TextColor3 = Color3.fromRGB(255,0,i)
+			wait(0)
 		end
 	end
 end
