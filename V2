@@ -12,6 +12,7 @@ local FLINGALL = Instance.new("TextButton")
 local SpamCHAT = Instance.new("TextButton")
 local SpamTEXT = Instance.new("TextButton")
 local CREDIT = Instance.new("TextButton")
+local IQOBBY = Instance.new("TextButton")
 local ENERGIZE = Instance.new("TextButton")
 local IY = Instance.new("TextButton")
 local OH = Instance.new("TextButton")
@@ -164,12 +165,29 @@ CREDIT.TextSize = 14.000
 CREDIT.TextWrapped = true
 CREDIT.MouseButton1Down:connect(function()
 TextBox.Text = "B"
-wait(0.8)
+wait(0.3)
 TextBox.Text = "By"
-wait(0.8)
+wait(0.3)
 TextBox.Text = "By T"
-wait(0.8)
+wait(0.3)
 TextBox.Text = "By TJ"
+end)
+IQOBBY.Parent = Frame
+IQOBBY.BackgroundColor3 = Color3.fromRGB(226, 155, 64)
+IQOBBY.BorderColor3 = Color3.fromRGB(0, 0, 0)
+IQOBBY.BorderSizePixel = 3
+IQOBBY.Rotation = -25
+IQOBBY.Position = UDim2.new(-0.40, 0, 0.35, 0)
+IQOBBY.Size = UDim2.new(0, 100, 0, 25)
+IQOBBY.Font = Enum.Font.SourceSans
+IQOBBY.Text = "IQ OBBY TELEPORT"
+IQOBBY.TextColor3 = Color3.fromRGB(0, 0, 0)
+IQOBBY.TextScaled = true
+IQOBBY.TextSize = 14.000
+IQOBBY.TextWrapped = true
+IQOBBY.MouseButton1Down:connect(function()
+game:GetService("TeleportService"):Teleport(12805830692)
+wait()
 end)
 ENERGIZE.Parent = Frame
 ENERGIZE.BackgroundColor3 = Color3.fromRGB(226, 155, 64)
@@ -514,6 +532,37 @@ local function PKIPWI_fake_script() -- TextLabel2.LocalScript
 		end
 		for i = 255,0,-5 do
 			script.Parent.TextColor3 = Color3.fromRGB(255,0,i)
+			wait(0.01)
+		end
+	end
+end
+coroutine.wrap(PKIPWI_fake_script)()
+local function PKIPWI_fake_script() -- IQOBBY.LocalScript 
+	local script = Instance.new('LocalScript', IQOBBY)
+
+	while wait() do
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,i,0) -- change backgroundcolor3 to textcolor3 to make text color rainbow
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,255,0)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,i)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,i,255)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,0,255)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,i)
 			wait(0.01)
 		end
 	end
